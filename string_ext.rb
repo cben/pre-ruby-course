@@ -5,11 +5,13 @@ class StringExt
     @first, @second = first, second
   end
 
+  # Adds the strings together.
   def concat
     return @first + @second
   end
 
-  # sic.  https://english.stackexchange.com/questions/3640/is-substract-versus-subtract-a-proper-word
+  # Removes mentions of second string from first.
+  # [Note rare spelling - english.stackexchange.com/q/3640/is-substract-versus-subtract-a-proper-word]
   def substract
     return @first.gsub(@second, "")
   end
