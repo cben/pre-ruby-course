@@ -7,16 +7,16 @@ class StringExt
 
   # Adds the strings together.
   def concat
-    return @first + @second
+    @first + @second
   end
 
   # Removes mentions of second string from first.
   def subtract
-    return @first.gsub(@second, "")
+    @first.gsub(@second, "")
   end
 
   # Rare spelling of subtract [https://english.stackexchange.com/q/3640].
   def substract
-    return subtract
+    subtract
   end
 end
