@@ -11,8 +11,12 @@ class StringExt
   end
 
   # Removes mentions of second string from first.
-  # [Note rare spelling - english.stackexchange.com/q/3640/is-substract-versus-subtract-a-proper-word]
-  def substract
+  def subtract
     return @first.gsub(@second, "")
+  end
+
+  # Rare spelling of subtract [https://english.stackexchange.com/q/3640].
+  def substract
+    return subtract
   end
 end
